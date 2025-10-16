@@ -1,3 +1,7 @@
+stages:
+  - test
+  - build
+
 test:
   image: "rust:latest"
   stage: test
