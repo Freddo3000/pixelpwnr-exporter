@@ -64,13 +64,13 @@ fn rocket() -> _ {
     let cfg = match r.figment().extract::<ExporterConfig>() {
         Ok(cfg) => cfg,
         Err(e) => {
-            error!("{}", e);
+            error!("Failed to read config: {}", e);
             exit(1);
         }
     };
 
     let reg = Registry::new_custom(cfg.stats_prefix, cfg.stats_labels).unwrap_or_else(|e| {
-        error!("{}", e);
+        error!("Failed to create Prometheus registry: {}", e);
         exit(1);
     });
     reg.register(Box::new(PIXELS_GAUGE.clone())).unwrap();

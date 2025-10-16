@@ -1,8 +1,19 @@
 # pixelpwnr-exporter
+![Crates.io Version](https://img.shields.io/crates/v/pixelpwnr-exporter)
+![Crates.io Total Downloads](https://img.shields.io/crates/d/pixelpwnr-exporter)
+![GitLab Tag](https://img.shields.io/gitlab/v/tag/freddo%2Fpixelpwnr-exporter?gitlab_url=https%3A%2F%2Fgit.ludd.ltu.se)
+
+
 This is a simply pixelpwnr [prometheus](https://prometheus.io) exporter for the
 [pixelpwnr](https://github.com/timvisee/pixelpwnr-server) PixelFlut server. It
 reads the produced stats file and exports it in a format digestible by
 Prometheus.
+
+## Downloads
+
+The latest binary can be downloaded
+[here](https://git.ludd.ltu.se/api/v4/projects/862/jobs/artifacts/master/raw/target/release/pixelpwnr-exporter?job=build)
+or be fetched as a docker image here: `registry.git.ludd.ltu.se/freddo/pixelpwnr-exporter`.
 
 ## Sample config
 
