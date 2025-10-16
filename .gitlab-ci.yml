@@ -6,6 +6,7 @@ test:
   image: "rust:latest"
   stage: test
   script:
+    - rustup component add rustfmt clippy
     - rustc --version && cargo --version  # Print version info for debugging
     - cargo fmt --all --check
     - cargo clippy
