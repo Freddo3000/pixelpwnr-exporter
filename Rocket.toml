@@ -1,0 +1,4 @@
+[debug]
+stats_prefix = "pixelpwnr"
+stats_labels = { a = "b" }
+stats_file = "./pixelpwnr.yaml"
