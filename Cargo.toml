@@ -1,7 +1,19 @@
 [package]
 name = "pixelpwnr-exporter"
+description = "A simple PixelPwnr Prometheus metrics exporter"
+authors = [
+    "Fredrik Falk <freddo@ludd.ltu.se>"
+]
+keywords = [
+    "rocket",
+    "prometheus"
+]
 version = "0.1.0"
 edition = "2024"
+license-file = "LICENSE.txt"
+homepage = "https://git.ludd.ltu.se/freddo/pixelpwnr-exporter"
+repository = "https://git.ludd.ltu.se/freddo/pixelpwnr-exporter"
+
 
 [dependencies]
 rocket = "~0.5"
