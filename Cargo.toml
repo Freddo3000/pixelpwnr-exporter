@@ -6,7 +6,8 @@ authors = [
 ]
 keywords = [
     "rocket",
-    "prometheus"
+    "prometheus",
+    "pixelflut"
 ]
 version = "0.1.0"
 edition = "2024"
